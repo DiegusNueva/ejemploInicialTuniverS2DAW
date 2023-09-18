@@ -1,2 +1,6 @@
-
-
+.shadow {
+    background-color: rebeccapurple;
+    -webkit-box-shadow: 80px 66px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 80px 66px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 80px 66px 5px 0px rgba(0, 0, 0, 0.75);
+}
