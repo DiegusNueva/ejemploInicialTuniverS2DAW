@@ -1,9 +1,20 @@
 /* Sombra de la página de contacto */
-.shadow {
-    background-color: rebeccapurple;
-    -webkit-box-shadow: 80px 66px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 80px 66px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 80px 66px 5px 0px rgba(0, 0, 0, 0.75);
+.perfect-div {
+    
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+    color: #ffffff; 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;
+
 }
 
 /* Margen inferior del botón*/
@@ -13,13 +24,20 @@ button {
 
 /* Estilos própios de un título en concreto */
 .cute-title {
-    text-align: center; /* Centra el texto */
-    font-size: 36px; /* Tamaño de fuente */
-    color: #ff5733; /* Color del texto */
-    background-color: #f0f0f0; /* Color de fondo */
-    padding: 20px; /* Espacio interno */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    text-align: center;
+    /* Centra el texto */
+    font-size: 36px;
+    /* Tamaño de fuente */
+    color: #ff5733;
+    /* Color del texto */
+    background-color: #f0f0f0;
+    /* Color de fondo */
+    padding: 20px;
+    /* Espacio interno */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra */
 }
 
 /* Todas las etiquetas que lleven este selector de clase se centran */
@@ -27,5 +45,6 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh; /* Esto asegura que el contenedor ocupe toda la altura de la ventana gráfica */
+    height: 10vh;
+    /* Esto asegura que el contenedor ocupe toda la altura de la ventana gráfica */
 }
