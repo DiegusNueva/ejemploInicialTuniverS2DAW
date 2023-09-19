@@ -11,7 +11,8 @@ button {
     margin-bottom: 15px;
 }
 
-.title {
+/* Estilos própios de un título en concreto */
+.cute-title {
     text-align: center; /* Centra el texto */
     font-size: 36px; /* Tamaño de fuente */
     color: #ff5733; /* Color del texto */
@@ -21,6 +22,7 @@ button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
+/* Todas las etiquetas que lleven este selector de clase se centran */
 .centered-container {
     display: flex;
     justify-content: center;
