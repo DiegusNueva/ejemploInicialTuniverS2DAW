@@ -13,4 +13,4 @@ function changeBackgroundColor() {
 
 // Agregar un evento al botón para cambiar el color al hacer clic
 const changeColorBtn = document.getElementById("changeColorBtn");
-changeColorBtn.addEventListener("click", changeBackgroundColor);
+
