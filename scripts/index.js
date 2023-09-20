@@ -11,6 +11,25 @@ const changeBackgroundColor = () => {
     document.body.style.backgroundColor = newColor;
 }
 
+// Función para transformar la temperatura de Celsius a Fahrenheit
+const convertTemperature = () => {
+
+    // Obtenemos la temperatura en grados Celsius ingresada por el usuario
+    const celsius = parseFloat(document.getElementById('celsius').value);
+
+    // Verificar si la entrada es válida
+    if (isNaN(celsius)) {
+        alert('Por favor, ingresa una temperatura válida.');
+        return;
+    }
+
+    // Calcular la temperatura en grados Fahrenheit
+    const fahrenheit = (celsius * 9/5) + 32;
+
+    // Mostrar el resultado en la página
+    document.getElementById('fahrenheit').textContent = fahrenheit.toFixed(2);
+}
+
 // Agregar un evento al botón para cambiar el color al hacer clic
 const changeColorBtn = document.getElementById("changeColorBtn");
 
