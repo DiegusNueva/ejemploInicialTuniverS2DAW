@@ -34,6 +34,7 @@ const convertTemperature = () => {
 
     // Mostrar el resultado en la página
     document.getElementById('fahrenheit').textContent = fahrenheit.toFixed(2);
+
 }
 
 // Agregar un evento al botón para cambiar el color al hacer clic
