@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="styles/styleCalculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculadora Básica</h1>
+        <form id="calculator-form">
+            <input type="number" id="num1" placeholder="Número 1" required>
+            <select id="operator" required>
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <input type="number" id="num2" placeholder="Número 2" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="result"></div>
+        <button id="reset">Reiniciar</button>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
