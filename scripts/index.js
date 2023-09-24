@@ -18,7 +18,7 @@ const convertTemperature = () => {
     const celsius = parseFloat(document.getElementById('celsius').value);
 
     // Comprobamos que hemos realizado el parseFloat() correctamente
-    console.log(typeof(celsius))
+    console.log(typeof (celsius))
 
     // Verificar si la entrada es válida
     if (isNaN(celsius)) {
@@ -30,7 +30,7 @@ const convertTemperature = () => {
      Multiplica la temperatura en grados Celsius (celsius) por 9/5.
      Luego, suma 32 al resultado obtenido en el paso anterior.
      El resultado, almacenado en la variable fahrenheit, representa la misma temperatura en grados Fahrenheit que la temperatura original en grados Celsius. */
-    const fahrenheit = (celsius * 9/5) + 32;
+    const fahrenheit = (celsius * 9 / 5) + 32;
 
     // Mostrar el resultado en la página
     document.getElementById('fahrenheit').textContent = fahrenheit.toFixed(2);
@@ -40,12 +40,17 @@ const convertTemperature = () => {
 // Agregar un evento al botón para cambiar el color al hacer clic
 const changeColorBtn = document.getElementById("changeColorBtn");
 
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
 // Función para realizar operaciones matemáticas
-function calculate() {
+const calculate = () => {
+
     const num1 = parseFloat(document.getElementById('num1').value);
     const num2 = parseFloat(document.getElementById('num2').value);
     const operator = document.getElementById('operator').value;
     let result;
+
+    // Uso del Switch en este caso
 
     switch (operator) {
         case 'add':
@@ -67,6 +72,22 @@ function calculate() {
         default:
             result = 'Operación no válida';
     }
+
+    // if (operator === 'add') {
+    //     result = num1 + num2;
+    // } else if (operator === 'subtract') {
+    //     result = num1 - num2;
+    // } else if (operator === 'multiply') {
+    //     result = num1 * num2;
+    // } else if (operator === 'divide') {
+    //     if (num2 === 0) {
+    //         result = 'No se puede dividir por cero';
+    //     } else {
+    //         result = num1 / num2;
+    //     }
+    // } else {
+    //     result = 'Operación no válida';
+    // }
 
     document.getElementById('result').textContent = 'Resultado: ' + result;
 }
