@@ -93,7 +93,7 @@ const calculate = () => {
 }
 
 // Función para reiniciar el formulario
-function resetForm() {
+const resetForm = () => {
     document.getElementById('calculator-form').reset();
     document.getElementById('result').textContent = '';
 }
