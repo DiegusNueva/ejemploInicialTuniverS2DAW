@@ -99,14 +99,12 @@ const resetForm = () => {
 }
 
 // Manejar el envío del formulario
-document.getElementById('calculator-form').addEventListener('submit', function (e) {
+document.getElementById('calculator-form').addEventListener('submit', (e) => {
     e.preventDefault(); // Evitar el envío del formulario
     calculate();
 });
 
 // Manejar el botón de reinicio
-document.getElementById('reset').addEventListener('click', function () {
+document.getElementById('reset').addEventListener('click', () => {
     resetForm();
 });
-
-
