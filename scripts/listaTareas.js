@@ -23,12 +23,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    taskList.addEventListener("click", function (event) {
+    // Botón para ELIMINAR una tarea
+    taskList.addEventListener("click", (event) => {
+        // Si el elemento en el que se hizo clic tiene la clase "delete-task"...
         if (event.target && event.target.classList.contains("delete-task")) {
+            // Accedemos al elemento padre del elemento en el que se hizo clic (que sería un elemento de lista <li> en este caso) y luego se llama al método .remove() para eliminar ese elemento de la lista.
             event.target.parentElement.remove();
         }
     });
 
+
+    // Método para crear una tarea
     const createTask = (text) => {
         // Creamos un nuevo elemento HTML CON JavaScript
         const taskItem = document.createElement("li");
