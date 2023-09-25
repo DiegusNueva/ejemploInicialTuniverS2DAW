@@ -3,14 +3,22 @@
 // DOMContentLoaded: Es una forma de garantizar que tu código JavaScript se ejecute solo después de que la página web haya terminado de cargarse, evitando problemas de interacción con elementos que aún no han aparecido en la pantalla.
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Vinculamos los elementos y/o nodos del HTML con JavaScript
+
     const taskInput = document.getElementById("task-input");
-    const addTaskButton = document.getElementById("add-task");
+    const addTaskButton = document.getElementById("add-task-button");
     const taskList = document.getElementById("task-list");
 
-    addTaskButton.addEventListener("click", function () {
+    // Al dar click en el botón de la tarea...
+    addTaskButton.addEventListener("click", () => {
+        // trim() sirve para eliminar espacios en blanco al COMIENZO y al FINAL del String. Obtenemos el valor del input
         const taskText = taskInput.value.trim();
+        // Si NO está vacío...
         if (taskText !== "") {
+            // Creamos una tarea
             createTask(taskText);
+            // Reseteamos el valor del input
             taskInput.value = "";
         }
     });
@@ -21,13 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    function createTask(text) {
+    const createTask = (text) => {
+        // Creamos un nuevo elemento HTML CON JavaScript
         const taskItem = document.createElement("li");
+        // Agregamos la clase "task-item" al elemento <li> anterior
         taskItem.classList.add("task-item");
+        // Añadimos a cada elemento "li" un span y el texto de la tarea
         taskItem.innerHTML = `
             <span>${text}</span>
             <button class="delete-task">Eliminar</button>
         `;
+        // Añadimos a nuestra lista un nuevo ítem
         taskList.appendChild(taskItem);
     }
 });
