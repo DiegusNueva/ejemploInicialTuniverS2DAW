@@ -1,11 +1,15 @@
+// Declaramos e inicializamos un array
 const tasks = [];
 
+// Cargamos todo el HTML y el CSS antes de realizar eventos con JavaScript
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Relacionamos las etiquetas de HTML con el JavaScript
     const taskInput = document.getElementById("task-input");
     const addTaskButton = document.getElementById("add-task-button");
     const taskList = document.getElementById("task-list");
 
+    // Cuando pulsamos el botón Abrir tarea...
     addTaskButton.addEventListener("click", () => {
         const taskText = taskInput.value.trim();
         if (taskText !== "") {
