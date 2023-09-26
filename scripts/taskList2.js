@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Cuando pulsamos el botón Abrir tarea...
     addTaskButton.addEventListener("click", () => {
+        //Quitamos espacios ANTES y DESPUÉS de la tarea
         const taskText = taskInput.value.trim();
         if (taskText !== "") {
             // Agregamos la tarea al array
